@@ -27,6 +27,32 @@
 //* Usage : Commonly used in logging or monitoring tools || Useful for storing temporary data.
 
 
+//! os.userInfo() :
+//? To know about the user 
+
+
+//! os.homedir() : 
+//? Returns the home directory of the current user. 
+//* Usage : Useful for locating user-specific files. 
+
+
+//! os.hostname() :
+//? Returns the hostname of the system.
+//* Usage : Useful for logging or identifying machines in networks.
+
+
+//! os.networkInterfaces() :
+//? Returns an object with details about the network interfaces. 
+//* Usage : Helps in network diagostics or configuration. 
+
+
+//! os.cpus() :
+//? Returns details about each logical CPU/core. 
+//* Usage : Helps optimize code for multi-core processing. 
+
+
+//! os.tmpdir() :
+//? Returns the default directory for temporary files.  
 
 
 
@@ -36,3 +62,13 @@ const os = require("os");
 
 console.log("Platform :", os.platform());
 console.log("User :", os.userInfo());
+console.log("CPU Architecture :", os.arch());
+console.log("Free Memory :", os.freemem(), "bytes");
+console.log("Total Memory:", os.totalmem(), "bytes");
+console.log("System Uptime :", os.uptime(), "seconds");
+console.log("Home Directory :", os.homedir());
+console.log("Host Name :", os.hostname());
+console.log("Network Interfaces :", os.networkInterfaces());
+console.log("CPU Info :", os.cpus());
+console.log("Temporary Directory :", os.tmpdir());
+console.log("Operating System :", os.type());
