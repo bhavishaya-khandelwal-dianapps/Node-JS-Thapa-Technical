@@ -1,0 +1,16 @@
+{
+  "name": "node-js-thapa-technical",
+  "version": "1.0.0",
+  "description": "Node and Express series by Thapa",
+  "main": "1_Intro_To_Node_JS.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhavishaya khandelwal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -3,7 +3,7 @@
 
 
 //! Objective 
-//* Create a progrsm using Node.js EventEmitter that :
+//* Create a program using Node.js EventEmitter that :
 
 //? Listens for multiple types of user events (e.g., login, logout, purchase, and profile update). 
 //? Tracks how many times each event is emitted. 

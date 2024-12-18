@@ -8,7 +8,7 @@
 
 
 //! Encapsulation :
-//? Node.js uses the CommonJS module system (module.exports and require) to ensure the code in one file does not pollute or interfere with the global space. 
+//? Node.js uses the CommonJS module system (module.exports and require) to ensure the code in one file does not pollute or interfere with the global scope. 
 //? This makes your code modular, maintainable, and easier to debug. 
 
 

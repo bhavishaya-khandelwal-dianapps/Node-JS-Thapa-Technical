@@ -71,9 +71,8 @@ console.log(__filename);
 
 //* student -> folder/student/data.txt
 console.log();
-const filePath = path.join("folder", "student", "data.txt");
-console.log(filePath);
-console.log();
+const filePath = path.join("folder", "students", "data.txt");
+console.log(filePath);       //? folder/students/data.txt
 
 
 

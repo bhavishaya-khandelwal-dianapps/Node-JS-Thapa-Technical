@@ -31,7 +31,7 @@ const PI = Math.PI;
 
 
 //! Method 3 : For exporting 
-module.exports = { add, mul, sub, div, PI };
+module.exports = { add, sub, mul, div, PI };
 
 
 
