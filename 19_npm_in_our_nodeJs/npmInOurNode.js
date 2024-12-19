@@ -19,9 +19,12 @@
 
 
 //! node_modules -> Stores all the packages we have installed 
-//! package-lock.json -> Stores all the latest version of everything that we are using in out currewnt project. 
+//! package-lock.json -> Stores all the latest version of everything that we are using in out current project. 
 
 
 
 //? npm install -> to install node_modules 
 //? npm list  -> list the installed dependencies  
+//? npm view express version 
+//? npm view nodemon versions
+
