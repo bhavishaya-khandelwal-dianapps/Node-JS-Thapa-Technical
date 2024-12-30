@@ -4,7 +4,7 @@
 
 //! Synchronous Code                                       Asynchronous Code
 //? Tasks are executed sequentially                        Tasks don't block execution.
-//? Each task blocks the next until completed              Usess callbacks, promises, or async/await. 
+//? Each task blocks the next until completed              Uses callbacks, promises, or async/await. 
 
 
 

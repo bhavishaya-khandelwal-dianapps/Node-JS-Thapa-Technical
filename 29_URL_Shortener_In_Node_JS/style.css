@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+h1 {
+    color: burlywood;
+}
+
+.row {
+    height: 100vh;
+}
+
+.urlCard {
+    padding: 1rem;
+    box-shadow: 2px 3px 4px grey;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(106, 192, 212);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(209, 209, 111);
+    color: black;
+    border : 3px solid black;
+    border-radius: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(103, 103, 223);
+}
