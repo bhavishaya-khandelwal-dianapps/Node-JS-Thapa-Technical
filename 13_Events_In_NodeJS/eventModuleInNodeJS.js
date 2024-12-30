@@ -22,5 +22,5 @@
 //! 2. on(eventName, listener) 
 //* Purpose : 
     //? Attaches a listener (a function) to a specified eventName. This listener will execute when the event is emitted. 
-
+    
     

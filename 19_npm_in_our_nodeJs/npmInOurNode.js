@@ -18,13 +18,22 @@
 
 
 
-//! node_modules -> Stores all the packages we have installed 
-//! package-lock.json -> Stores all the latest version of everything that we are using in out current project. 
+//! node_modules -> Stores all the packages we have installed
+    //? node_modules is what stores all the installed packages, It's usually heavy, so make sure to include it in .gitignore so that it won't get pushed on version control and avoid it while sharing with others. 
+
+//! package-lock.json -> Stores all the latest version of everything that we are using in our current project. 
+    //? package-lock.json includes exact version of all packages that you install, It makes sure to prevent breaking changes in newer versions of package. 
 
 
 
-//? npm install -> to install node_modules 
-//? npm list  -> list the installed dependencies  
+
+//? npm install -> to install node_modules
+ 
+//? npm list  -> list the installed dependencies 
+    //* npm list -a    => To see in detail  
+
+//? npm view <package-name> : To see the details of any package
+
 //? npm view express version 
-//? npm view nodemon versions
 
+//? npm view nodemon versions

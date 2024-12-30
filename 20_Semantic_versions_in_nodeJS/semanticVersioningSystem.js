@@ -9,21 +9,21 @@
 
 
 
-//*====================================================
+//*===========================================================================
 //* Symbol in dependency versions :- 
-//*===================================================
-//? Symbol          Meaning                                  Example 
+//*===========================================================================
+//? Symbol          Meaning                                  Example          Resolve To
 
-//? ^(Caret)    -   Minor and patch updates allowed      -   ^4.17.1
-//? ~(Tilde)    -   Only patch updates allowed 
-//? Exact       -   Fixed Version 
-//? >           -   Greater Than 
-//? <           -   Less Than 
-//? >=          -   Greater Than or Equal to 
-//? <=          -   Less than or equal to 
-//? *           -   Any version 
-//? Range       -   Acceptable Range 
-//? x           -   Wildcard for minor/patch versions 
+//? ^(Caret)    -   Minor and patch updates allowed      -   ^4.17.1          4.18.0, not 5.0.0  
+//? ~(Tilde)    -   Only patch updates allowed           -   ~4.17.1          4.17.2, not 4.18.0
+//? Exact       -   Fixed Version                        -   4.17.1           4.17.1 only 
+//? >           -   Greater Than                         -   >4.17.1          4.18.0, 5.0.0 
+//? <           -   Less Than                            -   <4.17.1          4.16.0, not 4.17.1
+//? >=          -   Greater Than or Equal to             -   >=4.17.1         4.7.1, 5.0.0 
+//? <=          -   Less than or equal to                -   <=4.17.1         4.17.1, 4.16.0
+//? *           -   Any version                          -   *                4.0.0, 5.0.0, etc.
+//? Range       -   Acceptable Range                     -   4.16.0 - 4.17.1  
+//? x           -   Wildcard for minor/patch versions    -   4.x
 
 
 

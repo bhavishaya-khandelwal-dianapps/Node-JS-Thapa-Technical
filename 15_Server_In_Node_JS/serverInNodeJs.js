@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
     }
     if(req.url === "/contact") {
         res.setHeader("Content-Type", "text/plain");
-        res.write("THis is a contact page");
+        res.write("This is a contact page");
         res.end();
     }
 });  //? Exactly we can say this server as Event Emitter (Behind the scene ye eventEmitter hi hai)

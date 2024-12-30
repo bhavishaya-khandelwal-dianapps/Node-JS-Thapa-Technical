@@ -53,6 +53,8 @@ console.log("End");
 
 
 
+const os = require("os");
+console.log(os.cpus().length);
 
 
 //*========================================================
@@ -68,14 +70,3 @@ console.log("End");
 
     //? Includes the "event loop" and "thread pool", enabling non-blocking tasks like file reading, networking, and timers. 
     //todo --- Libuv is for asynchronous tasks
-
-
-
-
-
-
-
-
-
-
-
