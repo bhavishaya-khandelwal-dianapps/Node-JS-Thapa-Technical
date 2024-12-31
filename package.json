@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Node and Express series by Thapa",
   "main": "1_Intro_To_Node_JS.js",
+  "type": "module",
   "scripts": {
+    "start": "node --watch 32_Environment_Variable_In_Express_JS/environmentVariable.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "bhavishaya khandelwal",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.4.1",
-    "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "nodemon": "^3.1.9",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "eslint": "^9.17.0"
