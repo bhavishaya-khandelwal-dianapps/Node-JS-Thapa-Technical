@@ -16,7 +16,7 @@
                 
                 <form action="" id="shorten-form">
                     <label for="" class="d-flex">Enter URL</label>
-                    <input type="text" class="form-control mb-4" name="url", id="url" required>
+                    <input type="url" class="form-control mb-4" name="url", id="url" required>
                     
                     <label for="" class="d-flex">Custom Short URL (Optional)</label>
                     <input type="text" class="form-control mb-3" name="shortCode" id="shortCode" required>
@@ -24,9 +24,12 @@
                     <button type="submit" class="text-center mt-4">Shorten</button>
                 </form>
                 
-                <h3 class="text-center mt-4">Shorten URLs</h3>
+                <h3 class="text-center my-4">Shorten URLs</h3>
 
                 <ul id="shorten">
+                    <li>
+                        http://127.0.0.1:5500/29_URL_Shortener_In_Node_JS/index.html -> index.html
+                    </li>
                     <li>
                         http://127.0.0.1:5500/29_URL_Shortener_In_Node_JS/index.html -> index.html
                     </li>
@@ -39,14 +42,14 @@
     <script src="./app.js"></script>
     <script type="text/javascript"> 
         document.getElementById("shorten-form").addEventListener('submit', (event) => {
-        event.preventDefault();
+            event.preventDefault();
 
-        const formData = new FormData(event.target);
-        let url = formData.get("url");
-        let shortCode = formData.get("shortCode");
+            const formData = new FormData(event.target);
+            let url = formData.get("url");
+            let shortCode = formData.get("shortCode");
 
-        console.log(url, shortCode);  
-    });
+            console.log(url, shortCode);  
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

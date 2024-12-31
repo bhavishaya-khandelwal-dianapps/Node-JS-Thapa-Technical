@@ -47,12 +47,12 @@ button:hover {
     border-radius: 2rem;
 }
 
-ul {
+.urlCard ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
+
 
 li{
     word-wrap: break-word;
@@ -60,4 +60,5 @@ li{
     font-size: 1.1rem;
     font-weight: 500;
     color: rgb(103, 103, 223);
+    padding-bottom: 1.1rem;
 }
