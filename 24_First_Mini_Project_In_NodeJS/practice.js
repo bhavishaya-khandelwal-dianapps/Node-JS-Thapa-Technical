@@ -1,52 +1,39 @@
-const readline = require("readline");
+import readline from "readline";
+
 
 const rl = readline.createInterface({
     input : process.stdin, 
     output : process.stdout
 });
 
+
 const todos = [];
 
 
-const handleInput = (option) => {
-    if(option == 1) {
-        rl.question("Enter the task : ", (task) => {
-            todos.push(task);
-            console.log("Task Added :", task);
-            showMenu();
-        });
-    }
-
-    else if(option == 2) {
-        if(todos.length == 0) console.log("======NO TASK FOUND======");
-
-        else { 
-            console.log("\n=================Your tasks are shown here==========")
-            todos.forEach((currTask) => {
-                console.log(currTask);
+const showMenu = () => {
+    console.log("\n=======Choose any option======\n");
+    console.log("1. : Add Task");
+    console.log("2. : Show Tasks");
+    console.log("3. : Exit\n");
+    rl.question("\nEnter any number : ", (num) => {
+        if(num == 1) {
+            rl.question("\nEnter your task : ", (task) => {
+                todos.push(task);
+                showMenu();
             })
         }
-        showMenu();
-    }
-
-    else if(option == 3) {
-        console.log("=============GOOD BYEE==========");
-        rl.close();
-    }
-
-    else {
-        console.log("Invalid option, Please try again....");
-        showMenu();
-    }
-
+        else if(num == 2) {
+            console.log("\n=======Your tasks=====\n");
+            todos.forEach((task) => {
+                console.log(task);
+            });
+            showMenu();
+        }
+        else if(num == 3) {
+            console.log("\n=====Good Byee=====");
+            rl.close();
+        }
+    });
 };
-
-const showMenu = () => {
-    console.log("\n==============1. Add a task==============");
-    console.log("===============2. View Tasks==============");
-    console.log("===============3. Exit==================");
-    rl.question("-------------Choose an option : ", handleInput);
-};
-
 
 showMenu();

@@ -1,5 +1,5 @@
 //* Import EventEmitter class 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 
 
 //* Create an instance of EventEmitter 

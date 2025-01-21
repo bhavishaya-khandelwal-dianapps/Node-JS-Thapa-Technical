@@ -1,12 +1,12 @@
-//*================================================
+//*=========================================
 //* Path Module - Node JS 
-//*================================================
+//*=========================================
 //? In Node.js, the path module provides utilities for working with file and directory paths. It's a built-in module, so you don't need to install any external package to use it. 
 
 
 //! Special Node.js Constants :- 
 //* __filename 
-//? Provides the absolute path of the currently exxecuting file. 
+//? Provides the absolute path of the currently executing file. 
 
 
 //* __dirname 
@@ -23,9 +23,9 @@
 
 
 
-//*================================================
+//*============================================
 //* Path Module - Features :-  
-//*================================================
+//*============================================
 //! path.parse() : 
 //? Returns an object with details about a given path, including root, dir, base, ext, and name. 
 

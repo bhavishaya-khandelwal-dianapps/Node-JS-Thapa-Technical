@@ -87,13 +87,13 @@ fs.promises.readdir(currentDirectory)
 
 
 //! To append some more data in the created file 
-// fs.promises.appendFile(filePath, "\nExtra data", "utf-8")
-// .then((data) => {
-//     console.log("Data Added Successfully");
-// })
-// .catch((error) => {
-//     console.log(error);
-// })
+fs.promises.appendFile(filePath, "\nExtra data", "utf-8")
+.then((data) => {
+    console.log("Data Added Successfully");
+})
+.catch((error) => {
+    console.log(error);
+})
 
 
 

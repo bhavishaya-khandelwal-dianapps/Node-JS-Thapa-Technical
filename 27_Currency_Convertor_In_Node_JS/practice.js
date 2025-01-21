@@ -26,8 +26,8 @@ https.get(url, (response) => {
     response.on("end", () => {
         const rates = JSON.parse(data).conversion_rates;
         console.log(rates);
-        rl.question("Enter the amount in USD : ", (amount) => {
-            rl.question("Enter the Target Currency : ", (currency) => {
+        rl.question(chalk.blue.bgWhite.bold("Enter the amount in USD : "), (amount) => {
+            rl.question(chalk.green.bgGrey.bold.inverse("Enter the Target Currency : "), (currency) => {
                 let rate = amount * rates[currency.toUpperCase()];
                 if(rate) {
                     console.log(`${amount} USD is approximately ${convertCurrency(amount, rate)} ${currency}`);

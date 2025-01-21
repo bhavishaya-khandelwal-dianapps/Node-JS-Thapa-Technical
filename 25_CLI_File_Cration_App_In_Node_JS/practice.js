@@ -1,34 +1,34 @@
-//* File Creation App in Node js 
-const fs = require("fs");
-const readline = require("readline");
-const path = require("path");
+import readline from "readline";
+import fs from "fs";
 
 
 const rl = readline.createInterface({
-    input : process.stdin, 
-    output : process.stdout 
+    input : process.stdin,
+    output : process.stdout
 });
 
-
-const handleInput = (fileName) => {
-    fileName = path.join(__dirname, fileName);
-    rl.question("Enter the content : ", (content) => {
-        fs.writeFile(fileName, content, (err) => {
-            if(err) {
-                console.log("Some error occured :", err);
-            }
-            else {
-                console.log("File Created Successfully");
-            }
-            rl.close();
-        });
+const readTheData = (fileName) => {
+    fs.readFile(fileName, "utf-8", (err, data) => {
+        if(err) {
+            console.log(err);
+        }
+        else {
+            console.log(data);
+        }
     });
 };
 
-
-const createFile = () => {
-    rl.question("Enter File Name : ", handleInput);
-};
-
-
-createFile();
+rl.question("\nEnter file name : ", (fileName) => {
+    rl.question("\nEnter the content : ", (data) => {
+        fs.writeFile(fileName, data, "utf-8", (err) => {
+            if(err) {
+                console.log(err);
+            }
+            else {
+                console.log("File Created Successfully");
+                readTheData(fileName);
+                rl.close();
+            }
+        });
+    });
+});

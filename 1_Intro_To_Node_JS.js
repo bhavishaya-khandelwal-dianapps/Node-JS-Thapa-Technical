@@ -23,7 +23,7 @@
 //? Anyone can :- 
     //* View : You can see how Node.js is built under the hood .
     
-    //* Modify : If you want to customize or improve Nde.js, you can do it. 
+    //* Modify : If you want to customize or improve Node.js, you can do it. 
 
     //* Contribute : Developers around the world actively contribute to improving Node.js
 

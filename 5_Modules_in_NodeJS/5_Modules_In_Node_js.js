@@ -3,7 +3,7 @@
 //*========================================
 //! Self contained code unit : 
 //? Each file in Node.js is treated as a seperate module.
-//? Variables, functions, or objects defined one file are not accessible in another file by default unless you explicitly export them. 
+//? Variables, functions, or objects defined in one file are not accessible in another file by default unless you explicitly export them. 
 
 
 

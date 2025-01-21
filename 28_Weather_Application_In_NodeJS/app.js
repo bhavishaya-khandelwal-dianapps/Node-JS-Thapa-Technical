@@ -29,7 +29,7 @@ const getWeather = async (city) => {
 };
 
 
-let city = await rl.question("ENter a city name to get its weather : ");
+let city = await rl.question("\nEnter a city name to get its weather : ");
 
 await getWeather(city);
 

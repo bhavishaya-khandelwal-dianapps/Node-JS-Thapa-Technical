@@ -20,8 +20,10 @@
 
 
 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 const emitter = new EventEmitter();
+
+
 
 const eventCounts = {
     "user-login" : 0, 

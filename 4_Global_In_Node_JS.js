@@ -17,7 +17,7 @@ global.console.log("Hello World");
 
 
 
-//! Why it is useful ?
+//! Why is it useful ?
 //? Consistent Access : In the past, accessing the global object varied depending on the environment. 
 //* 1. Browser : Window
 //* 2. Node.js : global 

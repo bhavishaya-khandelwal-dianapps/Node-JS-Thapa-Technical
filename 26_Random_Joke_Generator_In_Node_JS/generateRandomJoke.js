@@ -10,7 +10,7 @@ const getJoke = () => {
             data += chunk;
         });
 
-        response.addListener('end', () => {
+        response.on('end', () => {
             const joke = JSON.parse(data);
             console.log(chalk.green.bold`Here is a random ${joke.type} joke : `);
             console.log(chalk.yellow.bold(`${joke.setup}`));

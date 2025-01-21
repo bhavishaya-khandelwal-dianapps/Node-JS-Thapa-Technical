@@ -25,3 +25,7 @@ module.exports.mul = mul;
 //? module.exports is a single object or value. 
 //? When you are reassign module.exports (e.g. module.exports = add), it completely replaces whatever was previously assigned. 
 //? If you reassign it again (module.exports = mult), the previous value (add) is replaced with mult. 
+
+//* Use consistent syntax for clarity :
+    //? Assign everything once with module.exports = { ... }
+    //? Or assign properties individually with module.exports.property.

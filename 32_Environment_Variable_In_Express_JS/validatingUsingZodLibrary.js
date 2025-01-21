@@ -1,12 +1,12 @@
 import { z, ZodEffects, ZodError } from "zod";
 
 
-// export const PORT = isNaN(process.env.PORT) ? 3000 : parseInt(process.env.PORT);
+export const PORT = isNaN(process.env.PORT) ? 3000 : parseInt(process.env.PORT);
 
 
 const ageSchema = z.number().min(18).max(100).int();
 
-const userAge = 9;
+const userAge = 33;
 
 try {
     const parseUserAge = ageSchema.parse(userAge);

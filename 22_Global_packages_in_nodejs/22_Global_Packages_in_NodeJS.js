@@ -1,7 +1,7 @@
 
-//*====================================================
+//*================================================
 //* GLobal Packages :- 
-//*===================================================
+//*================================================
 //! sudo npm install -g npm-check-updates
 
 //? Up untill now, we have been installing packages locally, 
@@ -34,9 +34,9 @@
 
 
 
-//*====================================================
+//*================================================
 //* Development Dependency :- 
-//*====================================================
+//*================================================
 //? Development dependencies are the packages that aren't needed for functioning of your project in production.
 //? This can be for formatting, linting, testing, and so on. 
 //? If you use "npm install --production", those packages won't be installed, but they will be installed if you don't use production flag. 

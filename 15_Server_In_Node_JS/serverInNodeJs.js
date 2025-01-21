@@ -6,7 +6,7 @@
 
 
 
-//? A web server is software or hardware that serves web content (HTML, CSS, JavaScript, etc.) to clients (usually browsers) over the interbet or an intranet. It uses protocols like HTTP/HTTPS to handle requests and responses.
+//? A web server is software or hardware that serves web content (HTML, CSS, JavaScript, etc.) to clients (usually browsers) over the internet or an intranet. It uses protocols like HTTP/HTTPS to handle requests and responses.
 
 
 

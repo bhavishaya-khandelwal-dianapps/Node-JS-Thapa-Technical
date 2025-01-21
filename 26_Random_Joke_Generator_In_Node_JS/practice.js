@@ -1,26 +1,28 @@
-//* Random Joke Generator App In Node JS
-const https = require("https");
-
+import https from "https";
+import chalk from "chalk";
 
 
 const getJoke = () => {
-    const url = `https://official-joke-api.appspot.com/random_joke`;
+    const url = "https://official-joke-api.appspot.com/random_joke";
+
     https.get(url, (response) => {
         let data = "";
+
         response.on("data", (chunk) => {
             data += chunk;
         });
 
+
         response.on("end", () => {
-            const joke = JSON.parse(data);
-            console.log(`Here is a random joke`);
-            console.log((`${joke.setup}`));
-            console.log((`${joke.punchline}`));
+            let body = JSON.parse(data);
+            console.log(chalk.blue.bold.bgWhite("Here is a random joke"));
+            console.log(chalk.red.bold.bgBlue(`${body.setup}`));
+            console.log(chalk.green.bold.bgGrey.inverse(`${body.punchline}`));
         });
 
 
-        response.on("error", (err) => {
-            console.log(`Error fetching the joke, ${err.message}`);
+        response.on("error", () => {
+            console.log("Some error occured");
         });
     });
 }

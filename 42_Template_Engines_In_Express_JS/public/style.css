@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+}
+
+
+.row {
+    border : 3px solid black;
+    border-radius: 2rem;
+    background-color: rgb(167, 167, 194);
+}
+
+
+.container-fluid {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
